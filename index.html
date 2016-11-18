@@ -29,12 +29,11 @@ svg {
 <body>
 <script src="//d3js.org/d3.v3.min.js"></script>
 <script src="//d3js.org/topojson.v1.min.js"></script>
-  <h1> Wisconsin Population Density </h1>
-  <h2> Nathan Monahelis - November 6th </h2>
+<h1 style = "text-align:center"><bold>Wisconsin Population Density</bold></h1>
 <script>
 
 var width = 2000,
-    height = 1100;
+    height = 800;
 
 var formatNumber = d3.format(",d");
 
@@ -63,7 +62,7 @@ var svg = d3.select("body").append("svg")
 
 var g = svg.append("g")
     .attr("class", "key")
-    .attr("transform", "translate(440,40)");
+    .attr("transform", "translate(40,750)");
 
 g.selectAll("rect")
     .data(color.range().map(function(d, i) {
@@ -117,4 +116,11 @@ d3.json("wi.json", function(error, wi) {
 
 d3.select(self.frameElement).style("height", height + "px");
 
-</script>
+</script>   
+<h5>Nathan Monahelis</h5>
+<h5>Instructor: Suresh Lodha</h5>
+<h5>CMPS 165: Data programming for Visualization</h5>
+<h5>Fall 2016</h5>
+    
+</body>
+
